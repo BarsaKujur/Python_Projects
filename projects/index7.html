@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Resistration Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        </head>
+    <body>
+        <section class="container">
+            <header>Registration Form</header>
+            <form action="#" class="form">
+              <div class="input-box">
+                    <label>First Name:</label></div>
+                    
+                    <div class="input-box">
+                    <input type="text" name="fname" id="name" placeholder="Enter Your First Name" required />
+                    </div>
+                    <br><br>
+                    <div class="input-box">
+                    <label>Last Name:</label>
+                    <br>
+                    <input type="text" name="lname" id="name" placeholder="Enter Your Last Name" required />
+                    </div>
+                    <br><br>
+                    <div class="input-box">
+                    <label>Email:</label>
+                    <br>
+                    <input type="email" name="email" id="name" placeholder="Enter Your Valid Email Id" required />
+                    </div>
+                    <br><br>
+                    <div class="input-box">
+                    <label>Branch:</label>
+                    <br>
+                    <select id="Branch" name="" class="">
+                        <option value="IT">IT</option>
+                        <option value="CSE">CSE</option>
+                        <option value="EE">EE</option>
+                        <option value="Civil">Civil</option>
+                        <option value="EEE">EEE</option>
+                        <option value="production">production</option>
+                        <option value="ME">ME</option>
+                    </select>
+                    </div>
+                    <div class="input-box">
+                      <label>Year:</label>
+                      <br>
+                      <select id="Year" name="" class="">
+                          <option value="1st">1st</option>
+                          <option value="2nd">2nd</option>
+                          <option value="3rd">3rd</option>
+                          <option value="4th">4th</option>
+                      </select>
+                      </div>
+                    <br><br>
+                    <div class="input-box">
+                    <label>Registration Number:</label>
+                    <br>
+                    <input type="number" name="Registration Number" id="name" placeholder="Your Collage Registration Number" required />
+                    </div>
+                    <br><br>
+                    <div class="input-box">
+                    <label>Enter Password:</label>
+                    <br>
+                    <input type="password" name="password" id="password" placeholder="Password is admin" required />
+                    </div>
+                    <br><br>
+                    <div class="input-box">
+                <label>Select Your First Domain:</label>
+                <select id="Branch" name="" class="">
+                    <option value="Tech">Tech</option>
+                    <option value="Markating And Sponsership">Markating And Sponsership</option>
+                    <option value="Event Management">Event Management</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Graphic Designe">Graphic Designe</option>
+                    <option value="Public Relation">Public Relation</option>
+                    <option value="Video Editing">Video Editing</option>
+                </select>
+                </div>
+                <br><br>
+                <div class="input-box">
+                <label>Select Your Second Domain:</label>
+                <select id="Branch" name="" class="">
+                    <option value="Tech">Tech</option>
+                    <option value="Markating And Sponsership">Markating And Sponsership</option>
+                    <option value="Event Management">Event Management</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Graphic Designe">Graphic Designe</option>
+                    <option value="Public Relation">Public Relation</option>
+                    <option value="Video Editing">Video Editing</option>
+                </select>
+                </div>
+                   <br><br>
+                   <div class="gender">
+                    
+                    <label>Gender:</label>
+                    <br><br>
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" >
+                        <label for="check-female">Male</label>
+                      </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender" >
+                        <label for="check-female">Female</label>
+                      </div>
+                      <div class="gender">
+                        <input type="radio" id="check-other" name="gender" >
+                        <label for="check-other">prefer not to say</label>
+                      </div>
+                      </div>
+                   <br><br>
+                   <button class="input-box">
+                   <input  onclick="index3()" type="submit" value="submit" name="submit" id="submit">
+                   
+                   </button>
+                    
+                </form>
+        <script>
+            function index3(){
+                var password = document.getElementById("password").value;
+                if(password=="admin"){
+                    alert("Registered Succesfully");
+                }
+                else{
+                    alert("Invalid Information");
+                    return;
+                }
+            }
+        </script>
+    
+    </body>
+</html>
